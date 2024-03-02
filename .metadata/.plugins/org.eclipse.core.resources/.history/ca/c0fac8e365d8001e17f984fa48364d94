@@ -1,0 +1,36 @@
+package com.springcore;
+
+public class Student {
+ private int id;
+ private String name;
+ private String addesss;
+public int getId() {
+	return id;
+}
+public void setId(int id) {
+	this.id = id;
+}
+public String getName() {
+	return name;
+}
+public void setName(String name) {
+	this.name = name;
+}
+public String getAddesss() {
+	return addesss;
+}
+public void setAddesss(String addesss) {
+	this.addesss = addesss;
+}
+public Student(int id, String name, String addesss) {
+	super();
+	this.id = id;
+	this.name = name;
+	this.addesss = addesss;
+}
+public Student() {
+	super();
+}
+
+ 
+}

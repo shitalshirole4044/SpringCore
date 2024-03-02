@@ -1,0 +1,6 @@
+package com.springcore.constructorInjection;
+
+public class Certi {
+private int y;
+
+}
