@@ -8,8 +8,11 @@ public class Test {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		ApplicationContext con=new ClassPathXmlApplicationContext("com/springcore/constructorInjection/ci_config.xml");
-		Person p=(Person) con.getBean("person");
-		System.out.println(p);
+//		Person p=(Person) con.getBean("person");
+//		System.out.println(p);
+		Addition ad=(Addition) con.getBean("add");
+		ad.doSum();
+		
 
 	}
 

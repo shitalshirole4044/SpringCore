@@ -1,0 +1,18 @@
+package com.springcore.standalone.collections;
+
+import org.springframework.context.support.ClassPathXmlApplicationContext;
+import org.springframework.context.ApplicationContext;
+public class Test {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ApplicationContext con=new ClassPathXmlApplicationContext("com/springcore/standalone/collections/st_config.xml");
+		Person p=con.getBean("p1",Person.class);
+		System.out.println(p);
+		System.out.println(p.getFriends().getClass().getName());
+		System.out.println(p.getFee().getClass().getName());
+		System.out.println(p.getProp().getClass().getName());
+
+	}
+
+}

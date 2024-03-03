@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xmlns:context="http://www.springframework.org/schema/context" 
+xmlns:p="http://www.springframework.org/schema/p" 
+xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans.xsd
+http://www.springframework.org/schema/context
+http://www.springframework.org/schema/context/spring-context.xsd">
+
+<!--<bean class="com.springcore.lifecycly.Samosa" name="s1" init-method="init" destroy-method="destroy">
+<property name="price" value="12.00">
+</property>
+</bean>-->
+<!--<bean class="com.springcore.lifecycly.Pepsi" name="p1">
+<property name="cost" value="16">
+</property>
+</bean>-->
+
+<bean class="com.springcore.lifecycly.Example" name="e1">
+<property name="subject" value="Marathi">
+</property>
+</bean>
+
+<!--it enables only PostConstruct and PreDestroy Annotation-->
+<bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"></bean>
+
+<!--it enables All Annotation-->
+<context:annotation-config></context:annotation-config>
+
+</beans>
